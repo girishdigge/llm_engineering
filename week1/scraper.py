@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
 
-
 # Standard headers to fetch a website
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
@@ -27,7 +26,7 @@ def fetch_website_contents(url):
 
 def fetch_website_links(url):
     """
-    Return the links on the webiste at the given url
+    Return the links on the website at the given url
     I realize this is inefficient as we're parsing twice! This is to keep the code in the lab simple.
     Feel free to use a class and optimize it!
     """
